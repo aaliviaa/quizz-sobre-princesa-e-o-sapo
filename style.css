@@ -1,0 +1,80 @@
+:root {
+    --cor-fundo: #FFFFFF;        /* Cor secundária solicitada: Branco */
+    --cor-principal: #E6007E;    /* Cor principal solicitada: Rosa marcante */
+    --cor-secundaria: #FFB6C1;   /* Rosa suave para botões/detalhes */
+    --cor-destaque: #FFD1DC;     /* Rosa claro de destaque */
+    --cor-texto: #333333;        /* Texto escuro no fundo branco */
+    --cor-texto-caixa: #FFFFFF;  /* Texto claro dentro dos elementos rosa */
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.caixa-principal {
+    background-color: var(--cor-principal);
+    color: var(--cor-texto-caixa);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px rgba(230, 0, 126, 0.25);
+}
+
+h1 {
+    color: #FFFFFF;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.caixa-perguntas {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.caixa-alternativas {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+button {
+    background-color: var(--cor-fundo);
+    color: var(--cor-principal);
+    border: 2px solid var(--cor-destaque);
+    border-radius: 15px;
+    padding: 14px 20px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
+    transform: translateY(-2px);
+}
+
+.caixa-resultado {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 15px;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+.texto-resultado {
+    color: #FFFFFF;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
